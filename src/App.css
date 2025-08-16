@@ -1,0 +1,43 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.sidebar .nav-link:hover {
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.premium {
+  border-top: 1px solid #ddd;
+}
+
+.main-content {
+  background: #f4f4f4;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.stat-card {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
