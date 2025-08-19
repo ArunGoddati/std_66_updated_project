@@ -13,7 +13,7 @@
     width: 100%;
     z-index: 1020;
 } 
-.hamburger_elements{
-    color: black;
+.hamburger_menu .nav-link {
+  color: #333 !important;
 }
 }
