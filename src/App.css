@@ -36,8 +36,12 @@
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   .sidebar {
     display: none;
+  }
+  .app-container{
+    display: flex;
+    flex-direction: column;
   }
 }

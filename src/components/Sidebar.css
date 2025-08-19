@@ -1,0 +1,10 @@
+.side_bar{
+    position: sticky;
+    top: 0;
+    height:100vh;
+}
+@media screen and (max-width:560px){
+    .side_bar{
+        display:none;
+    }
+}

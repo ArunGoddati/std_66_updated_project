@@ -1,5 +1,5 @@
 import React from "react";
-import {Image, Table, Badge, Dropdown } from "react-bootstrap";
+import {Image, Table, Badge} from "react-bootstrap";
 
 export default function SessionRequests() {
   const requests = [
@@ -15,10 +15,10 @@ export default function SessionRequests() {
   };
 
   return (
-    <div>
-      <h5>Session Requests</h5>
+    <div className="mt-2">
+      <h5 className="mb-2">Session Requests</h5>
       <Table hover responsive>
-        <thead>
+        <thead> 
           <tr>
             <th>Client</th>
             <th>Requested Time</th>
@@ -29,21 +29,13 @@ export default function SessionRequests() {
         <tbody>
           {requests.map((r, idx) => (
             <tr key={idx}>
-              <td>
+              <td className="d-flex align-items-center gap-3 p-2 px-3">
                 <Image roundedCircle src={r.url} width={36} height={36} alt="client"/>
                 {r.name}</td>
               <td>{r.time}</td>
               <td>{r.type}</td>
               <td>
                 <Badge bg={statusColors[r.status]} className="me-2">{r.status}</Badge>
-                <Dropdown size="sm" drop="end">
-                  <Dropdown.Toggle variant="light" />
-                  <Dropdown.Menu>
-                    <Dropdown.Item>Approve</Dropdown.Item>
-                    <Dropdown.Item>Pending</Dropdown.Item>
-                    <Dropdown.Item>Decline</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
               </td>
             </tr>
           ))}

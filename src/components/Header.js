@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import "./Header.css";
 export default function Header() {
   return (
-    <header className="header d-flex justify-content-between align-items-center px-3 px-lg-4 py-3">
+    <header className="header d-flex justify-content-between align-items-center px-3 px-lg-4 py-3 header_section">
       <div>
-        <h4 className="mb-1">Welcome back, Emily!</h4>
+        <h4 className="mb-1 pt-1">Welcome back, Emily!</h4>
         <p className="text-muted mb-0">Easily manage your upcoming sessions and track client progress</p>
       </div>
       <div className="d-flex align-items-center gap-2">

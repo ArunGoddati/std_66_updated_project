@@ -9,11 +9,12 @@ import SessionRequests from './components/SessionRequests';
 import ProfileCard from './components/ProfileCard';
 import Calendar from './components/Calendar';
 import Agenda from './components/Agenda';
-
+import HamburgerMenu from "./components/HamburgerMenu";
 function App() {
   return (
     <div className="app-container d-flex">
       <Sidebar />
+      <HamburgerMenu />
       <div className="main-content flex-grow-1">
         <Header />
         <Container fluid className="py-3 content-wrap">
